@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Погода и карта</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class='container'>
+  <header>
+    <h1>Погода berlandbor</h1>
+      <div class="clock">
+    <div id="time"></div>
+    <div id="date"></div>
+  </div>
+  <hr>
+  </header>
+  <div>
+    <button id="locate-button">Определить местоположение</button>
+    <input type="text" id="city-input" placeholder="Введите город для поиска">
+    <button id="search-button">Искать</button>
+  </div>
+  <div id="map"></div>
+  <div id="weather-info">
+    <div id="current-weather">
+      <h2>Текущая погода</h2>
+      <p id="weather-description"></p>
+      <p id="temperature"></p>
+      <p id="pressure"></p>
+      <p id="wind-speed"></p>
+      <p id="precipitation"></p>
+    </div>
+    <div id="forecast">
+      <h2>Прогноз на несколько дней</h2>
+      <ul id="forecast-list"></ul>
+    </div>
+  </div>
+  <div>
+    <h2>График погоды на 5 дней:</h2>
+<button onclick="обновитьСтраницу()">Обновить графики погоды</button>
+    
+    <canvas id="weather-chart" width="300" height="200"></canvas>
+<canvas id="pressure-chart" width="300" height="200"></canvas>
+<!--canvas id="weather-chart1" width="400" height="200"></canvas-->
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+ 
+  <script src="script.js"></script>
+  
+
+  <!--script src="geolocation.js"></script>
+  <script src="search.js"></script-->
+</body>
+</html>
