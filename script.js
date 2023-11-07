@@ -64,7 +64,7 @@ function getWeatherData(lat, lon) {
   }*/
 
 // Создайте объект с соответствиями кодов погоды и текстовыми описаниями
-/*const weatherDescriptions = {
+const weatherDescriptions = {
   '01d': 'Ясно (день)',
   '02d': 'Переменная облачность (день)',
   '03d': 'Облачно (день)',
@@ -83,7 +83,7 @@ function getWeatherData(lat, lon) {
   '11n': 'Гроза (ночь)',
   '13n': 'Снегопад (ночь)',
   '50n': 'Туман (ночь)',
-};*/
+};
 
 function getOneCallWeatherForecast(lat, lon) {
   const exclude = "current,minutely,hourly"; // Исключаем текущие данные, данные по минутам и почасовой прогноз
